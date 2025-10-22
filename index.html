@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1>F3TwelveForce</h1>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home">Beranda</a></li>
+                <li class="nav-item"><a href="#members">Anggota</a></li>
+                <li class="nav-item"><a href="#gallery">Galeri</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to XII - f3</h2>
+            <p>"Grow Together, Shine Forever"</p>
+        </div>
+    </section>
+
+    <section id="members" class="members-section">
+        <div class="container">
+            <h2>Anggota Kelas</h2>
+            <div class="search-section">
+                <h2>Cari Nama Kamu..</h2>
+                <div class="search-input-group">
+                    <input type="text" id="searchInput" placeholder="Ketik Nama yang dicari...">
+                    <button id="searchBtn" class="search-btn">
+                        <i>Cari</i>
+                    </button>
+                </div>
+                <ul id="searchResult" class="search-result"></ul>
+            </div>
+            <div id="members-grid" class="members-grid">
+                <!-- Members will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Galeri Foto Kelas</h2>
+            <div id="gallery-grid" class="gallery-grid">
+                <!-- Photos will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for photos -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Photo">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
